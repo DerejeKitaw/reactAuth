@@ -1,5 +1,28 @@
 import React from 'react';
-
+/**
+   * @desc this class will return FormField component
+   * @param {string} id - Field name defined in state.formData
+   * @example id='email';
+   *  state = {
+    formdata: {
+      email: {
+        element: 'input',
+        value: '',
+        valid: false,
+        touched: false,
+        validationMessage: '',
+        config: {
+          name: 'email_input',
+          type: 'email',
+          placeholder: 'Enter your email'
+        },
+      }
+    }
+  };
+  * @param {object} formdata is Field values of state.formData
+  * @param {function} change - will send the event and id of changed field
+  * @return jsx - form field
+  */
 export default ({formdata, change, id}) => {
 
 
